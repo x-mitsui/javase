@@ -1,51 +1,46 @@
-package p03_Runnable接口.demo;
+package p03_Runnable.demo;
 
 import org.apache.commons.io.FileUtils;
+import p01_createThread.ThreadTest;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-//练习,实现多线程图片下载
-public class TestThread extends Thread {
-    private String _url; //网络图片地址
-    private String _name; //保存文件地址
-
-    public TestThread(String url, String name) {
-        this._url = url;
-        this._name = name;
-    }
-
+// 创建线程方法2: 实现Runnable接口, 重写run方法
+public class TestThread implements Runnable {
     @Override
     public void run() {
-        WebDownloader webDownloader = new WebDownloader();
-        webDownloader.downloader(this._url, this._name);
-        System.out.println("下载文件"+this._name);
+        for (int i =0;i<100;i++){
+            System.out.println("watching>>>>>"+i);
+        }
     }
 
     public static void main(String[] args) {
-        TestThread testThread1 = new TestThread("https://img0.baidu.com/it/u=3399903401,3429099419&fm=26&fmt=auto&gp=0.jpg","1.jpg");
-        TestThread testThread2 = new TestThread("https://img0.baidu.com/it/u=3850210309,264895298&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500","2.jpg");
-        TestThread testThread3 = new TestThread("https://img1.baidu.com/it/u=795196589,2407743860&fm=26&fmt=auto&gp=0.jpg","3.jpg");
+        //main线程(主线程)
 
-        // 每次执行打印日志都不同
-        testThread1.start();
-        testThread2.start();
-        testThread3.start();
+        // 创建实现runnable接口的类对象
+        TestThread t = new TestThread();
 
+        // 创建线程对象, 通过线程对象来开启线程
+        new Thread(t).start();
 
-    }
-}
-
-class WebDownloader{
-    // 下载方法
-    public void downloader(String url, String name){
-        try {
-            FileUtils.copyURLToFile(new URL(url),new File(name));
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("IO异常");
-        } finally {
+        for (int i = 0; i < 2000; i++) {
+            System.out.println("eating------"+i);
         }
     }
+
+    /**
+     * 对比:
+     * 继承Thread类
+     * 子类继承Thread具备多线程能力
+     * 启动线程: 子类对象.start()
+     * 不建议使用: OOP单继承具有局限性
+     *
+     * 实现Runnable接口
+     * 实现接口Runnable接口具备多线程能力
+     * 启动线程: 传入目标对象 + new Thread(实现Runnable接口的对象).start()
+     * 推荐使用: 避免了单继承局限性, 灵活方便, 方便同一个对象被都多个线程使用
+     *
+     * */
 }

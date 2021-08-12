@@ -1,6 +1,6 @@
-package P4_example;
+package p04_example;
 // 多个线程操作同一个对象
-// 买火车票的例子
+// 案例: 买火车票的例子
 // 多个线程操作同一个资源的情况
 public class TestThread4 implements Runnable{
     private int ticketNum = 10;
