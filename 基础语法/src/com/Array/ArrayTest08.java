@@ -84,5 +84,5 @@ class Room {
         isOpen = open;
     }
 
-   
+
 }
