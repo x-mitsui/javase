@@ -19,6 +19,8 @@ public class P03_datas {
                 boolean类型 1bit: true false
 
                 1字节==8 bit
+
+                顺口溜: byte short int long / float double boolean char
          */
         // 整数
         int I = 23;
