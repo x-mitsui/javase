@@ -7,6 +7,15 @@ package com.String;
  * 3. java中规定, 双引号括起来的字符串, 是不可变的, 也就是说"abc"从出生到死亡, 不可变, 不能变成"abcd",也不能变成"ab";
  * 4. 在JDK当中双引号括起来的字符串, 例如:"abx" "沙发上" 都是直接存储在 方法区的"字符串常量池" 当中的.
  * 为什么把字符串设置在一个"字符串常量池"当中呢? 因为字符串在实际的开发中使用频繁, 为了执行效率才这样做.
+ * 5. String为什么是不可变的
+ * String类中有一个char[]数组,这个char[]数组采用了final修饰, 因为数组一旦创建, 长度就不可变.
+ * 并且被final修饰的引用一旦指向某个对象,不可再指向其它对象,所以String是不可变的.
+ * 6. StringBuffer和StringBuilder为什么是可变的?
+ * StringBuffer/StringBuilder内部实际上一个char[]数组,这个char[]数组没有被final修饰,StringBuffer/StringBuilder的
+ * 初始化容量是16, 当存满知乎会进行扩容, 底层调用了数组拷贝的方法System.arraycopy()来进行扩容,所以StringBuffer/StringBuilder适合
+ * 字符串的频繁拼接操作.
+ * String s = "xyz";
+ * s = "abc";// s没有被final修饰,所以s可变;不可变指的不是它
  */
 public class StringTest01 {
     public static void main(String[] args) {
