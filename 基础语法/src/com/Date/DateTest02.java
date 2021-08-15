@@ -2,6 +2,12 @@ package com.Date;
 
 /**
  * 获取自1970年1月1日 00:00:00到当前系统时间的总毫秒数,1970年第一台计算机诞生
+ * 简单总结下System类
+ * System.out [out是System类的静态变量]
+ * System.out.println() [println()方法不是System类的, 是PrintStream类的方法
+ * System.gc() 建议启动垃圾回收
+ * System.currentTimeMillis() 获取自1970年1月1日 00:00:00到当前系统时间的总毫秒数
+ * System.exit(0) 退出JVM
  */
 public class DateTest02 {
     public static void main(String[] args) {
