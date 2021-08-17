@@ -25,6 +25,7 @@ public class CollectionTest05 {
         System.out.println(c.contains(y));
 
         // remove删除的时候内部也调用了equals方法
+        // 8大数据类型都重写了equals
         Collection cc = new ArrayList();
         cc.add(new String("abc"));
         cc.remove(new String("abc"));
