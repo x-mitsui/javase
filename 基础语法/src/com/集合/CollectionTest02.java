@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * 关于集合遍历/迭代专题
+ * 关于集合遍历/迭代专题(一)
  */
 public class CollectionTest02 {
     public static void main(String[] args) {
