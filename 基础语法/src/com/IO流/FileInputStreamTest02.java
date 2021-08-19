@@ -6,6 +6,8 @@ import java.io.IOException;
 
 /**
  * 对第一个程序改进
+ * 这个程序仍有缺点:
+ * 一次读取一个字节,这样内存和硬盘交互太频繁, 基本上时间/资源都耗费在交互上了,能不能一次读取多个字节
  */
 public class FileInputStreamTest02 {
     public static void main(String[] args) {
