@@ -28,6 +28,11 @@ package com.集合;
  *
  *  Iterator it = "Collection对象".iterator();
  *  it是迭代器对象
+ * 2. 主要掌握:
+ *  每个集合对象的创建
+ *  向集合添加元素
+ *  从集合中取出元素
+ *  遍历集合
  */
 public class CollectionTest00 {
 
