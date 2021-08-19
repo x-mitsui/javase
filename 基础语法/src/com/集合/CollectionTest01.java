@@ -1,7 +1,5 @@
 package com.集合;
 
-import javafx.print.Collation;
-
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -29,7 +27,7 @@ public class CollectionTest01 {
         collation.add(1200);//自动装箱,实际上是放进去了一个对象的内存地址
         collation.add(3.14);
         collation.add(new Object());
-        collation.add(new Student());
+        collation.add(new com.集合.bean.Student());
         collation.add(true);
 
         //
@@ -56,7 +54,7 @@ public class CollectionTest01 {
         collation.add(234);
         collation.add(true);
         collation.add("哈哈哈哈");
-        collation.add(new Student());
+        collation.add(new com.集合.bean.Student());
 
         Object[] objs = collation.toArray(); //注意: objs存的是对象地址
         for (int i = 0; i < objs.length; i++) {
