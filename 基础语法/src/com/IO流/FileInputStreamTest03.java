@@ -40,8 +40,7 @@ public class FileInputStreamTest03 {
             System.out.println("第三次----------->");
             readCount = fis.read(byteArr);// 第三次读不到返回-1, 会替换前三个
             System.out.println("读取了"+readCount+"个字节");
-            for (byte item:
-                    byteArr) {
+            for (byte item: byteArr) {
                 System.out.println(item);
             }
         } catch (FileNotFoundException e) {
