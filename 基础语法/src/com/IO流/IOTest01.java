@@ -41,8 +41,8 @@ package com.IO流;
  *      强行输出完(清空管道!) 刷新的作用就是清空管道. 注意: 如果没有flush()可能会丢失数据.
  * 6. java.io包下需要掌握的流有16个:
  *     文件专属:
- *      java.io.FileInputStream
- *      java.io.FileOutputStream
+ *      java.io.FileInputStream *!
+ *      java.io.FileOutputStream *!
  *      java.io.FileReader
  *      java.io.FileWriter
  *
@@ -62,11 +62,11 @@ package com.IO流;
  *
  *     标准输出流:
  *      java.io.PrintWriter
- *      java.io.PrintStream
+ *      java.io.PrintStream *!
  *
  *     对象专属流:
- *      java.io.ObjectInputStream
- *      java.io.ObjectOutputStream
+ *      java.io.ObjectInputStream *!
+ *      java.io.ObjectOutputStream *!
  *
  * 7. 能用记事本打开的都是普通文本文件, 和后缀名无关
  */
