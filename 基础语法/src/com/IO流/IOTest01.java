@@ -67,8 +67,8 @@ package com.IO流;
  *     对象专属流:
  *      java.io.ObjectInputStream
  *      java.io.ObjectOutputStream
- *      
- * 7. 能用记事本打开的都是普通文本文件
+ *
+ * 7. 能用记事本打开的都是普通文本文件, 和后缀名无关
  */
 public class IOTest01 {
 }
