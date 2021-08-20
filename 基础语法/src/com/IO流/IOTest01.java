@@ -39,7 +39,7 @@ package com.IO流;
  *      java.io.Flushable接口, 都是可刷新的, 都有flush()方法.
  *      养成一个好习惯, 输出流在最终输出之后, 一定要记得flush()刷新一下. 这个刷新表示将通道/管道当中剩余未输出的数据
  *      强行输出完(清空管道!) 刷新的作用就是清空管道. 注意: 如果没有flush()可能会丢失数据.
- *  6. java.io包下需要掌握的流有16个:
+ * 6. java.io包下需要掌握的流有16个:
  *     文件专属:
  *      java.io.FileInputStream
  *      java.io.FileOutputStream
@@ -67,7 +67,8 @@ package com.IO流;
  *     对象专属流:
  *      java.io.ObjectInputStream
  *      java.io.ObjectOutputStream
- *
+ *      
+ * 7. 能用记事本打开的都是普通文本文件
  */
 public class IOTest01 {
 }
