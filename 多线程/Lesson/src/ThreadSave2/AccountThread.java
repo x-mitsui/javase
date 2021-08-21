@@ -13,7 +13,10 @@ public class AccountThread extends Thread{
     public void run() {
         // 表示取款
         double money = 5000;
-        act.withdraw(money);
+//        synchronized (act){//这种方法也可以, 只不过扩大了同步的范围, 效率更低了; 这里不能写this哟,知道为什么么,因为这里的this不是共享对象
+
+            act.withdraw(money);
+//        }
 
 
     }
