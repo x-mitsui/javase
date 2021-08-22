@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * 关于线程的sleep方法:
  *      static void sleep(long millis)

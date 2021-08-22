@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * 关于线程的优先级
  */

@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * 1. 怎么获取线程对象
  *       Thread.currentThread()

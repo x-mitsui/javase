@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * 合并线程
  */

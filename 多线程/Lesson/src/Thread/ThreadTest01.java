@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * 实现继承的第一种方式:
  *      编写一个类, 直接继承java.lang.Thread, 重新run方法
