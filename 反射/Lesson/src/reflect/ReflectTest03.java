@@ -25,7 +25,7 @@ public class ReflectTest03 {
         // 通IO流读取classinfo.properties文件
         FileReader reader = null;
         try {
-             reader = new FileReader("Lesson/classinfo.properties");
+             reader = new FileReader("Lesson/src/classinfo.properties");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
