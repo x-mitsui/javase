@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 /**
- * 通过反射机制访问一个java对象的属性
+ * 重点: 通过反射机制访问一个java对象的属性
  *  给属性赋值
  *  获取属性的值
  *
