@@ -12,22 +12,10 @@ import java.lang.reflect.Modifier;
  */
 public class ReflectTest08 {
     public static void main(String[] args)  {
-        // 不使用反射属性怎么获取一个对象的属性
-        /**
-         * 给属性赋值三要素:
-         *  要素1: 对象s
-         *  要素2: no属性
-         *  要素3: 1111
-         */
-        Student student = new Student();
-        student.no =111;
-        System.out.println(student.no);
 
-
-        // 这些参数可以放在可配置文件里
-        updateFieldValue("reflect.bean.UserService","no", 22222);
+        getMethod("reflect.bean.UserService");
     }
-    public static void updateFieldValue(String className, String fieldName, int upDateNumber){
+    public static void getMethod(String className){
         // 通过反射机制访问一个java对象的属性
         Class userServiceClass = null;
         Object obj = null;
