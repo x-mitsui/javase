@@ -15,6 +15,6 @@ public class BigDecimalTest01 {
         // 求和不能用v1+v2, 需要调用方法求和
         BigDecimal v3 = v1.add(v2);
         System.out.println(v3);
-
     }
 }
+
