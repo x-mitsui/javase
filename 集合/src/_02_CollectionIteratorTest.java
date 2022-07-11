@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @Description: PACKAGE_NAME
  * @version: 1.0
  */
-public class CollectionIteratorTest {
+public class _02_CollectionIteratorTest {
     public static void main(String[] args) {
         Collection col1 = new ArrayList();
         col1.add(1);

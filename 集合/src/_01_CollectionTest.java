@@ -9,7 +9,7 @@ import java.util.List;
  * @Description: 测试Collection接口的增删改，利用实现类ArrayList
  * @version: 1.0
  */
-public class CollectionTest {
+public class _01_CollectionTest {
     public static void main(String[] args) {
         Collection col1 = new ArrayList();
         col1.add(1);
