@@ -19,6 +19,7 @@ public class _03_ListTest {
         list.add(5L);
         list.add(6);
 
+
         // 增
         list.add(3,4);
 
