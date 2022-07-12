@@ -15,6 +15,7 @@ public class TestIO01 {
         File f = new File("a/b/c/testio1.txt");
         FileReader fileReader = new FileReader(f);
         // 方式一：一个字符一个字符读，文件结尾data为-1
+        // 一个字母或一个汉字就是一个字符
 //        int data1 = fileReader.read();
 //        int data2 = fileReader.read();
 //        int data3 = fileReader.read();
